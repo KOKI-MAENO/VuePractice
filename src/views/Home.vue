@@ -1,9 +1,10 @@
 <template>
   <div class="home">
-    <img alt="Vue logo" src="../assets/logo.png">
+    <img alt="Vue logo" src="../assets/img1.jpg">
     <HelloWorld msg="Welcome to Your Vue.js App"/>
   </div>
 </template>
+
 
 <script>
 // @ is an alias to /src
@@ -16,3 +17,12 @@ export default {
   }
 }
 </script>
+
+    <style scoped lang="scss">
+    .home{
+      img{
+        width: 100%;
+        height: 500px;
+      }
+    }
+    </style>

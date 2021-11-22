@@ -17,15 +17,18 @@
   text-align: center;
   color: #2c3e50;
   #nav {
+    margin-right: 50px;
     padding: 30px;
+    text-align: right;
   a {
     font-weight: bold;
     font-size: 1.2em;
     color: #2c3e50;
     text-decoration: none;
+    padding: 5px 10px;
     }
   a.router-link-exact-active {
-    color: #42b983;
+    color: blue;
     }
   }
 }
