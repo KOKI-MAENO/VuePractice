@@ -32,11 +32,6 @@ export default {
     props: {
         msg: String
     },
-    component: {
-        SiteItem,
-        ServiceItem,
-        ApplicationItem,
-    },
     data() {
         return { isActive: '1', };
     },
@@ -53,27 +48,53 @@ export default {
 <style scoped lang="scss">
 .tab_box{
   margin-top: 100px;
+  height: 200px;
+  box-sizing: border-box;
+  z-index: 0;
   h1{
     width: 200px;
-    margin: 0 auto;
-    border-bottom: 5px solid #040404;
+    margin: 0 auto 75px;
+    padding-bottom: 2px;
+    border-bottom: 4px solid #040404;
   }
   .tab_menu{
+    width: 60%;
+    height: 45px;
+    margin: 0 auto;
+    border: 3px solid #040404;
     .tab_list {
-          overflow: hidden;
+          display: flex;
           list-style: none;
+          margin: 0;
+          padding: 0;
+          justify-content: space-around;
       li {
-          float: left;
-          padding: 10px 20px;
+        line-height: 45px;
+        position: relative;
+          width : calc(100% / 3) ;
+          padding: 0px 20px;
           cursor: pointer;
-          transition: .3s;
+          font-weight: bold;
       }
       li:not(:first-child) {
-          border-left: none;
+        border-left: none;
       }
       li.active {
-          border-bottom: 3px solid #000;
+        background-color:#333;
+          color:#fff;
           cursor: auto;
+        &::before{
+          position: absolute;
+          top: 45px;
+          left: 50%;
+          transform: translateX(-50%);
+          -webkit-transform: translateX(-50%);
+          -ms-transform: translateX(-50%);
+          content: "";
+          border-top: 20px solid #333;
+          border-right: 25px solid transparent;
+          border-left: 25px solid transparent;
+        }
       }
     }
     }
