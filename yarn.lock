@@ -1967,6 +1967,11 @@
   dependencies:
     "tweetnacl" "^0.14.3"
 
+"bezier-easing@2.1.0":
+  "integrity" "sha1-wE3+i5JtbsrKGBPWn/F5t8ICXYY="
+  "resolved" "https://registry.npmjs.org/bezier-easing/-/bezier-easing-2.1.0.tgz"
+  "version" "2.1.0"
+
 "bfj@^6.1.1":
   "integrity" "sha512-BmBJa4Lip6BPRINSZ0BPEIfB1wUY/9rwbwvIHQA1KjX9om29B6id0wnWXq7m3bn5JrUVjeOTnVuhPT1FiHwPGw=="
   "resolved" "https://registry.npmjs.org/bfj/-/bfj-6.1.2.tgz"
@@ -7839,6 +7844,11 @@
     "astral-regex" "^1.0.0"
     "is-fullwidth-code-point" "^2.0.0"
 
+"smoothscroll-polyfill@^0.4.4":
+  "integrity" "sha512-TK5ZA9U5RqCwMpfoMq/l1mrH0JAR7y7KRvOBx0n2869aLxch+gT9GhN3yUfjiw+d/DiF1mKo14+hd62JyMmoBg=="
+  "resolved" "https://registry.npmjs.org/smoothscroll-polyfill/-/smoothscroll-polyfill-0.4.4.tgz"
+  "version" "0.4.4"
+
 "snapdragon-node@^2.0.1":
   "integrity" "sha512-O27l4xaMYt/RSQ5TR3vpWCAB5Kb/czIcqUFOM/C4fYcLnbZUc1PkjTAMjof2pBWaSTwOUd6qUHcFGVGj7aIwnw=="
   "resolved" "https://registry.npmjs.org/snapdragon-node/-/snapdragon-node-2.1.1.tgz"
@@ -8842,6 +8852,13 @@
   "integrity" "sha512-FUlILrW3DGitS2h+Xaw8aRNvGTwtuaxrRkNSHWTizOfLUie7wuYwezeZ50iflRn8YPV5kxmU2LQuu3nM/b3Zsg=="
   "resolved" "https://registry.npmjs.org/vue-router/-/vue-router-3.5.3.tgz"
   "version" "3.5.3"
+
+"vue-scrollto@^2.20.0":
+  "integrity" "sha512-7i+AGKJTThZnMEkhIPgrZjyAX+fXV7/rGdg+CV283uZZwCxwiMXaBLTmIc5RTA4uwGnT+E6eJle3mXQfM2OD3A=="
+  "resolved" "https://registry.npmjs.org/vue-scrollto/-/vue-scrollto-2.20.0.tgz"
+  "version" "2.20.0"
+  dependencies:
+    "bezier-easing" "2.1.0"
 
 "vue-style-loader@^4.1.0", "vue-style-loader@^4.1.2":
   "integrity" "sha512-sFuh0xfbtpRlKfm39ss/ikqs9AbKCoXZBpHeVZ8Tx650o0k0q/YCM7FRvigtxpACezfq6af+a7JeqVTWvncqDg=="

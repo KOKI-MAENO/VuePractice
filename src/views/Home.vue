@@ -1,7 +1,7 @@
 <template>
   <div class="home">
-    <img alt="Vue logo" src="@/assets/engineer.jpg">
-    <TabMenu msg="Portfolio"/>
+    <img src="@/assets/engineer.jpg">
+    <TabMenu msg="Portfolio" id="portfolio"/>
   </div>
 </template>
 
@@ -20,10 +20,12 @@ export default {
 
     <style scoped lang="scss">
     .home{
+      color: #333;
       img{
         width: 100%;
         height: 500px;
         object-fit: cover;
+        margin-top: 80px;
       }
     }
     </style>

@@ -2,8 +2,8 @@
   <div id="app">
     <div id="nav">
       <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link> |
-      <router-link to="/service">Service</router-link>
+      <router-link  :to="{ name: 'home', hash: '#portfolio'}">Portfolio</router-link> | 
+      <router-link to="/contact">Contact</router-link>
     </div>
     <router-view/>
   </div>
@@ -13,7 +13,8 @@
 import 'normalize.css'
 
 export default {
-  name: 'App'}
+  name: 'App',
+    }
 </script>
 
 <style scoped lang="scss">
@@ -23,21 +24,43 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   box-sizing: border-box;
   text-align: center;
-  color: #2c3e50;
+  color: #fff;
   #nav {
-    margin-right: 50px;
-    padding: 30px;
+    box-sizing: border-box;
+    padding: 25px;
     text-align: right;
+    position: fixed;
+    top:0;
+    width: 100%;
+    background-color: #000;
   a {
+    position: relative;
+    display: inline-block;
     font-weight: bold;
     font-size: 1.2em;
-    color: #2c3e50;
+    color: #fff;
     text-decoration: none;
+    margin: 0px 5px;
     padding: 5px 10px;
     }
-  a.router-link-exact-active {
-    color: blue;
+  a.router-link-exact-active{
+    &::before{
+      content: '';
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      border-bottom: 2px solid #fff;
+      animation: border_anim 0.2s linear forwards;
+    }
     }
   }
+}
+@keyframes border_anim {
+	0%{
+		width: 0%;
+	}
+	100%{
+		width: 100%;
+	}
 }
 </style>
