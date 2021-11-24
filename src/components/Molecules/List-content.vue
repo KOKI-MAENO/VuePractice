@@ -15,11 +15,14 @@
 export default {
     name: 'ListContent',
     props:{
-        title: String,
+        title:{
+            type:String,
+            default: '制作中',
+        },
         url: String,
         image:{
             type: String,
-            default: 'img1.jpg'
+            default: 'coming-soon.jpg'
         },
     },
 }
@@ -31,7 +34,36 @@ export default {
     margin: 0 auto;
     width: 25%;
     height: 250px;
-    overflow:hidden;
+    box-shadow: 0 0 3px 0 rgba(0,0,0,.15), 0 2px 3px 0 rgba(0,0,0,.25);
+	transition: .35s;
+    cursor: pointer;
+    &::before{
+        content: "";
+        width: 40px;
+        height: 40px;
+        background-size: contain;
+        background-image: url(../../assets/bracket.png);
+        position: absolute;
+        left: -27px;
+        top: -15px;
+        background-repeat: no-repeat;
+    }
+    &::after{
+        content: "";
+        width: 40px;
+        height: 40px;
+        background-size: contain;
+        background-image: url(../../assets/bracket.png);
+        transform: scale(-1, -1);
+        position: absolute;
+        right: -27px;
+        bottom: -15px;
+        background-repeat: no-repeat;
+    }
+    &:hover{
+        box-shadow: 0 16px 32px -6px rgba(0,0,0,.22), 0 0 6px rgba(0,0,0,.18);
+        transform: translateY(-7px);
+    }
     .image_box{
         img{
             width: 380px;

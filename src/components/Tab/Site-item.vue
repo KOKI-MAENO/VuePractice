@@ -18,7 +18,7 @@ export default {
 
 <style lang="scss" scoped>
     div{
-        width: 80%;
+        width: 85%;
         margin: 75px auto;
         display: flex;
         justify-content: center;

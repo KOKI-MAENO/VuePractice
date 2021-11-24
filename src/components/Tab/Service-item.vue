@@ -1,8 +1,8 @@
 <template>
 <div>
-    <ListContent title="Todoアプリ" url="/about" />
-    <ListContent title="チャットアプリ"/>
-    <ListContent title="タイピングゲーム"/>
+    <ListContent />
+    <ListContent />
+    <ListContent />
 </div>
 </template>
 
@@ -19,7 +19,7 @@ export default {
 
 <style lang="scss" scoped>
     div{
-        width: 80%;
+        width: 85%;
         margin: 75px auto;
         display: flex;
         justify-content: center;
