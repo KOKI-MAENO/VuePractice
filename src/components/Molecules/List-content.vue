@@ -1,5 +1,5 @@
 <template>
-<div class="list_container">
+<li class="list_container">
     <a v-bind:href=url>
         <div class="image_box">
             <img v-bind:src="require(`@/assets/${image}`)" :alt="image">
@@ -8,7 +8,7 @@
             <p>{{title}}</p>
         </div>
     </a>
-</div>
+</li>
 </template>
 
 <script>
@@ -19,7 +19,10 @@ export default {
             type:String,
             default: '制作中',
         },
-        url: String,
+        url:{
+            type: String,
+            default: '/',
+        },
         image:{
             type: String,
             default: 'coming-soon.jpg'
@@ -35,6 +38,7 @@ export default {
     width: 25%;
     height: 250px;
     box-shadow: 0 0 3px 0 rgba(0,0,0,.15), 0 2px 3px 0 rgba(0,0,0,.25);
+    list-style: none;
 	transition: .35s;
     cursor: pointer;
     &::before{
@@ -45,7 +49,7 @@ export default {
         background-image: url(../../assets/bracket.png);
         position: absolute;
         left: -27px;
-        top: -15px;
+        top: -20px;
         background-repeat: no-repeat;
     }
     &::after{
@@ -57,7 +61,7 @@ export default {
         transform: scale(-1, -1);
         position: absolute;
         right: -27px;
-        bottom: -15px;
+        bottom: -20px;
         background-repeat: no-repeat;
     }
     &:hover{
@@ -66,7 +70,7 @@ export default {
     }
     .image_box{
         img{
-            width: 380px;
+            width: 100%;
             height: 250px;
             object-fit: cover;
         }
@@ -74,15 +78,15 @@ export default {
     .content_box{
         position: absolute;
         bottom: 0;
-        width: 380px;
-        height: 70px;
-        background:  #000;
-        opacity: 0.6;
         font-weight: bold;
+        width: 100%;
+
         p{
             color: #fff;
-            line-height: 70px;
+            height: 50px;
+            line-height: 50px;
             margin: 0;
+            background-color: rgba(0,0,0, 0.6);
         }
     }
 }

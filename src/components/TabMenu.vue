@@ -2,7 +2,7 @@
 <div>
 <div class="tab">
   <div class="tab_box container">
-    <h1>{{ msg }}</h1>
+    <h2>{{ msg }}</h2>
     <div class="tab_menu">
       <ul class="tab_list">
         <li @click="changeTab('1')" v-bind:class="{'active': isActive === '1'}">WEBサイト</li>
@@ -51,11 +51,12 @@ export default {
   height: 200px;
   box-sizing: border-box;
   z-index: 0;
-  h1{
+  h2{
     width: 200px;
     margin: 0 auto 75px;
     padding-bottom: 2px;
     border-bottom: 4px solid #040404;
+    font-size: 2em;
   }
   .tab_menu{
     width: 60%;

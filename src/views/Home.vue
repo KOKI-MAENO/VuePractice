@@ -1,8 +1,13 @@
 <template>
+<div>
   <div class="home">
     <img src="@/assets/engineer.jpg">
+    <!-- <section class="about">
+      <h2>About</h2>
+    </section> -->
     <TabMenu msg="Portfolio" id="portfolio"/>
   </div>
+</div>
 </template>
 
 
