@@ -1,6 +1,6 @@
 <template>
 <ul>
-    <ListContent v-for="item in items" :key="item.index" :title="item.title" :url="item.url" :image="item.image"/>
+    <ListContent v-for="item in items" :key="item.index" :title="item.title" :demo_url="item.demo_url" :image="item.image" :git_url="item.git_url" :desc="item.desc" :skills="item.skills"/>
 </ul>
 </template>
 
