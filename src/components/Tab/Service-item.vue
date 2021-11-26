@@ -1,6 +1,6 @@
 <template>
 <ul>
-    <ListContent v-for="item in items" :key="item.index" :title="item.title" :demo_url="item.demo_url" :image="item.image" :git_url="item.git_url" :desc="item.desc" :skills="item.skills"/>
+    <ListContent v-for="item in items" :key="item.index" :title="item.title" :demo_url="item.demo_url" :image1="item.image1" :image2="item.image2" :image3="item.image3" :git_url="item.git_url" :desc="item.desc" :skills="item.skills"/>
 </ul>
 </template>
 
@@ -28,7 +28,7 @@ export default {
         width: 85%;
         margin: 75px auto;
         display: flex;
-        justify-content: center;
+        justify-content: space-around;
         padding:0;
     }
 </style>
